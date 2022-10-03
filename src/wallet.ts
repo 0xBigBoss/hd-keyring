@@ -2,11 +2,11 @@ import {
   addressFromPublickey,
   publicKeyFromPrivate,
   validatePrivateKey,
-  TxMsg,
-  TxEncoderFactory,
-  TxSignature,
-  CoinDenom,
-} from "@pokt-network/pocket-js/dist/index";
+} from "@pokt-network/pocket-js/dist/utils/key-pair";
+import { TxMsg } from "@pokt-network/pocket-js/dist/transactions/models/msgs/tx-msg";
+import { TxEncoderFactory } from "@pokt-network/pocket-js/dist/transactions/factory/tx-encoder-factory";
+import { TxSignature } from "@pokt-network/pocket-js/dist/transactions/models/tx-signature";
+import { CoinDenom } from "@pokt-network/pocket-js/dist/transactions/models/coin-denom";
 import { Mnemonic, HDNode, defaultPath } from "@sendnodes/hd-node/dist/index";
 import { ExternallyOwnedAccount } from "@ethersproject/abstract-signer";
 import { Logger } from "@ethersproject/logger";
